@@ -1,0 +1,11 @@
+# netlify.toml
+[build]
+  command = "npm run build"
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "18"
+  
+# Clear cache on every build (solves many issues)
+[build.processing]
+  skip_processing = true
