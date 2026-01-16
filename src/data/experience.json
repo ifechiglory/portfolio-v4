@@ -1,0 +1,35 @@
+[
+{
+    "id":"1",
+    "company":"Attueyi Coding Academy",
+    "position":"Frontend Tutor",
+    "startDate":"2024-07-01",
+    "endDate": null,
+    "current":"true",
+    "description":"Designed and delivered a 12-week frontend development curriculum covering HTML, CSS, JavaScript, and React. Taught foundational and advanced topics, including layout systems (flexbox & grid), responsive design, Tailwind CSS, and API integration. Created detailed class notes, weekly schedules, and hands-on projects to reinforce learning outcomes. Guided students through real-world concepts like Git/GitHub workflows. Designed and delivered digital quizzes and assessments via Typeform, Tally.so, and Microsoft Forms. Mentored students through code reviews, debugging, and final project preparation.",
+    "technologies":["React.js","JavaScript","Tailwind CSS","HTML","Version Control","Curriculum Development","RESTful APIs"]
+}
+,
+{
+    "id":"2",
+    "company":"Gardeners For Africa",
+    "position":"Frontend Developer",
+    "startDate":"2025-09-08",
+    "endDate":null,
+    "current":"true",
+    "description":"Focused heavily on responsive layouts using flexbox and CSS grid, optimizing components for both desktop and mobile screens. Integrated RESTful APIs for student data and authentication using sessionStorage for access control. Optimized component design using conditional rendering, list mapping, and modular component structure. Managed Git branching workflows, Yarn workspaces, and Vercel deployment for smooth CI/CD.",
+    "technologies":["RESTful APIs","TypeScript","React.js","Redux.js","Version Control"]
+}
+,
+{
+    "id":"3",
+    "company":"Daabo Technologies",
+    "position":"Frontend Developer",
+    "startDate":"2023-04-03",
+    "endDate":"2023-07-01",
+    "current":"false",
+    "description":"Developed and maintained responsive dashboards and interfaces for client applications using HTML, CSS, JavaScript, and React. Focused on enhancing user experience through performance optimization and UI consistency. Worked in cross-functional teams and contributed to Agile workflows, reporting directly to the CTO. Connected frontend interface to the backend using RESTful APIs.",
+    "technologies":["Next.js","RESTful APIs"]
+}
+
+]

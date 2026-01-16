@@ -1,0 +1,120 @@
+[
+  {
+    "id": 1,
+    "title": "Aroma Worshippers Landing Page",
+    "description": "Official website for Aroma Worshippers Music Ministry. Built with modern frontend tools to provide a clean, responsive, and user-friendly experience.",
+    "longDescription": "A fully responsive landing page for Aroma Worshippers Music Ministry featuring modern design principles, smooth animations, and optimized performance for the best user experience.",
+    "technologies": ["React", "Tailwind CSS"],
+    "github": "https://github.com/Aroma-Worshippers/aw-landing-page",
+    "live": "https://www.aromaworshippers.com/",
+    "featured": true,
+    "image": "project-1.jpg",
+    "category": "Landing Page"
+  },
+  {
+    "id": "2",
+    "title": "Quizard",
+    "description": "A frontend quiz app built with React + Vite, Tailwind CSS, and Firebase authentication for testing students.",
+    "longDescription": "Interactive quiz application with user authentication, multiple question types, scoring system, and real-time results. Built to create and manage quizzes for educational purposes.",
+    "technologies": ["React", "Vite", "Tailwind CSS", "Firebase"],
+    "github": "https://github.com/ifechiglory/quizard",
+    "live": "https://frontend-quizard.netlify.app/",
+    "featured": true,
+    "image": "project-2.jpg",
+    "category": "Education"
+  },
+  {
+    "id": "3",
+    "title": "Haven",
+    "description": "A modern e-commerce furniture store built with React, Redux Toolkit, Tailwind CSS, and Framer Motion animations.",
+    "longDescription": "Full-featured e-commerce platform with product catalog, shopping cart, user authentication, filtering system, and glassmorphism design. Features smooth animations and mobile-responsive UI.",
+    "technologies": [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Lucide Icons",
+      "Framer Motion",
+      "Redux Toolkit"
+    ],
+    "github": "https://github.com/ifechiglory/haven",
+    "live": "https://haven-bay.netlify.app/",
+    "featured": true,
+    "image": "project-3.jpg",
+    "category": "E-commerce"
+  },
+  {
+    "id": "4",
+    "title": "To-do App",
+    "description": "A simple Todo List application built with React, Redux Toolkit, and Tailwind CSS.",
+    "longDescription": "Minimalist todo application with task management, filtering options, and persistent storage. Demonstrates clean state management with Redux Toolkit.",
+    "technologies": ["React", "Tailwind CSS", "Redux Toolkit"],
+    "github": "https://github.com/ifechiglory/to-do",
+    "live": "https://v2-todo.netlify.app/",
+    "featured": false,
+    "image": "project-4.jpg",
+    "category": "Productivity"
+  },
+  {
+    "id": "5",
+    "title": "Weather Dashboard",
+    "description": "A weather dashboard built with React, Redux Toolkit, and Axios for real-time weather data.",
+    "longDescription": "Interactive weather application that fetches real-time data from OpenWeather API. Features city search, detailed forecasts, and responsive design with clean UI.",
+    "technologies": ["React", "Tailwind CSS", "Redux Toolkit", "Axios"],
+    "github": "https://github.com/ifechiglory/weather-dashboard",
+    "live": "https://v1-stormify.netlify.app/",
+    "featured": false,
+    "image": "project-5.jpg",
+    "category": "Weather"
+  },
+  {
+    "id": "6",
+    "title": "Aurora",
+    "description": "A sleek, modern landing page for a fictional SaaS platform with smooth animations and responsive design.",
+    "longDescription": "Polished landing page featuring smooth scrolling, micro-interactions, and modern design patterns. Built with React, Vite, and Framer Motion for exceptional user experience.",
+    "technologies": [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Lucide Icons",
+      "Framer Motion"
+    ],
+    "github": "https://github.com/ifechiglory/aurora",
+    "live": "https://aurora-landing.netlify.app/",
+    "featured": false,
+    "image": "project-6.jpg",
+    "category": "SaaS"
+  },
+  {
+    "id": "7",
+    "title": "Pathfinder",
+    "description": "A React travel inspiration platform combining multiple APIs for comprehensive travel information.",
+    "longDescription": "Advanced travel platform integrating Unsplash, OpenTripMap, Rest Countries, and OpenWeather APIs. Features destination discovery, weather information, and stunning photography with sophisticated state management.",
+    "technologies": [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Lucide Icons",
+      "Framer Motion",
+      "Zustand",
+      "TanStack Query",
+      "React Router"
+    ],
+    "github": "https://github.com/ifechiglory/pathfinder",
+    "live": "https://pathfinder-j.netlify.app/",
+    "featured": true,
+    "image": "project-7.jpg",
+    "category": "Travel"
+  },
+  {
+    "id": "8",
+    "title": "Lexicon",
+    "description": "A dictionary app built as a frontend final project using React and Free Dictionary API.",
+    "longDescription": "Comprehensive dictionary application with word definitions, pronunciations, and usage examples. Built as a demonstration of API integration and clean React architecture.",
+    "technologies": ["React", "REST API"],
+    "github": "https://github.com/ifechiglory/lexicon",
+    "live": "https://lexicon-dictionary.netlify.app/",
+    "featured": false,
+    "image": "project-8.jpg",
+    "category": "Education"
+  }
+]

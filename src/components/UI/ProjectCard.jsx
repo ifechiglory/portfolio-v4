@@ -1,0 +1,183 @@
+import React from "react"
+import { motion } from "framer-motion"
+import { Github, ExternalLink } from "lucide-react"
+
+const ProjectCard = ({ project, index, layout = "image-right" }) => {
+  return (
+    <motion.article
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+      transition={{ duration: 0.5 }}
+      className="relative mb-8 lg:mb-20"
+    >
+      {}
+      <div className="lg:hidden relative rounded-xl overflow-hidden border-2 border-green/30 h-[350px]">
+        <div className="absolute inset-0">
+          <img
+            src={`/projects/${project.image}`}
+            alt={project.title}
+            className="object-cover w-full h-full"
+          />
+          <div className="absolute inset-0 bg-navy/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-green/5 via-transparent to-transparent"></div>
+        </div>
+
+        <div className="relative z-10 flex flex-col justify-end h-full p-5">
+          <p className="mb-2 font-mono text-sm text-green">Featured Project</p>
+
+          <h3 className="mb-3 text-xl font-bold text-lightest-slate">
+            <a
+              href={project.live || project.github || "#"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-green"
+            >
+              {project.title}
+            </a>
+          </h3>
+
+          <div className="p-3 mb-3 rounded-lg bg-light-navy/90 backdrop-blur-sm">
+            <p className="text-sm leading-relaxed text-lightest-slate line-clamp-3">
+              {project.longDescription || project.description}
+            </p>
+          </div>
+
+          <div className="flex flex-wrap gap-2 mb-3">
+            {project.technologies.slice(0, 3).map(tech => (
+              <span
+                key={tech}
+                className="px-2 py-1 font-mono text-xs rounded text-slate bg-navy/70"
+              >
+                {tech}
+              </span>
+            ))}
+            {project.technologies.length > 3 && (
+              <span className="px-2 py-1 font-mono text-xs rounded text-green bg-navy/70">
+                +{project.technologies.length - 3}
+              </span>
+            )}
+          </div>
+
+          <div className="flex gap-4">
+            {project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors text-slate hover:text-green"
+              >
+                <Github size={20} />
+              </a>
+            )}
+            {project.live && (
+              <a
+                href={project.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors text-slate hover:text-green"
+              >
+                <ExternalLink size={20} />
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {}
+      <div className="items-center hidden grid-cols-1 gap-8 lg:grid lg:grid-cols-2">
+        {}
+        <div
+          className={`${layout === "image-left" ? "lg:order-1" : "lg:order-2"}`}
+        >
+          <a
+            href={project.live || project.github || "#"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block overflow-hidden border-2 rounded-lg group border-green/30"
+          >
+            <div className="relative overflow-hidden">
+              <img
+                src={`/projects/${project.image}`}
+                alt={project.title}
+                className="object-cover w-full h-auto transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 transition-colors duration-300 bg-green/0 group-hover:bg-green/10"></div>
+            </div>
+          </a>
+        </div>
+
+        {}
+        <div
+          className={`${
+            layout === "image-left"
+              ? "lg:order-2 lg:text-right"
+              : "lg:order-1 lg:text-left"
+          }`}
+        >
+          <p className="mb-2 font-mono text-sm text-green">Featured Project</p>
+
+          <h3 className="mb-4 text-2xl font-bold transition-colors lg:text-3xl text-lightest-slate hover:text-green">
+            <a
+              href={project.live || project.github || "#"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {project.title}
+            </a>
+          </h3>
+
+          {}
+          <div className="p-6 mb-6 rounded-lg shadow-lg bg-light-navy">
+            <p className="leading-relaxed text-slate">
+              {project.longDescription || project.description}
+            </p>
+          </div>
+
+          {}
+          <div
+            className={`flex flex-wrap gap-4 mb-6 ${
+              layout === "image-left" ? "lg:justify-end" : "lg:justify-start"
+            }`}
+          >
+            {project.technologies.map(tech => (
+              <span key={tech} className="font-mono text-sm text-slate">
+                {tech}
+              </span>
+            ))}
+          </div>
+
+          {}
+          <div
+            className={`flex gap-6 ${
+              layout === "image-left" ? "lg:justify-end" : "lg:justify-start"
+            }`}
+          >
+            {project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors text-slate hover:text-green"
+              >
+                <Github size={24} />
+              </a>
+            )}
+            {project.live && (
+              <a
+                href={project.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors text-slate hover:text-green"
+              >
+                <ExternalLink size={24} />
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+    </motion.article>
+  )
+}
+
+export default ProjectCard

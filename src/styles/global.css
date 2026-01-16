@@ -1,0 +1,291 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #0a192f;
+    color: #8892b0;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  body {
+    font-family: "Calibre", "Inter", "-apple-system", "BlinkMacSystemFont", "sans-serif";
+    font-weight: 400;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: #ccd6f6;
+    font-weight: 600;
+    line-height: 1.1;
+  }
+  
+  /* Code/Mono text */
+  code, pre, .font-mono {
+    font-family: "SF Mono", "Fira Code", monospace;
+    font-weight: 400;
+    font-size: 0.9em;
+  }
+  
+  ::selection {
+    background-color: rgba(100, 255, 218, 0.2);
+    color: #64ffda;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #0a192f;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #233554;
+    border-radius: 6px;
+    border: 3px solid #0a192f;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #64ffda;
+  }
+}
+
+@layer components {
+
+  .main-container {
+    @apply max-w-[1600px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16;
+  }
+  
+  .viewport-fix {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+  
+  /* Ensure animations trigger properly */
+  .section-wrapper {
+    will-change: transform, opacity;
+  }
+  
+  /* Content width for sections */
+  .content-container {
+    @apply max-w-[1000px] mx-auto;
+  }
+  
+  /* Text content width */
+  .text-container {
+    @apply max-w-[700px];
+  }
+  
+  /* Section spacing - Brittany's generous padding */
+  .section-padding {
+    @apply px-6 py-24 md:py-32 lg:py-40 sm:px-8 md:px-12;
+  }
+
+  /* Numbered headings with proper spacing */
+  .numbered-heading {
+    @apply flex items-center mb-12 text-2xl font-semibold md:text-3xl text-lightest-slate;
+  }
+  
+  .numbered-heading::before {
+    content: "0" counter(section) ".";
+    counter-increment: section;
+    @apply mr-4 font-mono text-lg text-green md:text-xl;
+  }
+  
+  /* Nav links */
+  .nav-link {
+    @apply font-mono text-sm transition-colors text-light-slate hover:text-green;
+  }
+  
+  /* Utilities for line clamping */
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+  
+  /* Hide scrollbar for mobile tabs */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Project card overlap effect */
+  .project-overlap-container {
+    position: relative;
+  }
+  
+  .project-overlap-container .description-box {
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 20px 30px -15px rgba(2, 12, 27, 0.7);
+  }
+  
+  /* Mobile responsive adjustments for project cards */
+  @media (max-width: 1024px) {
+    .project-overlap-container .description-box {
+      transform: none !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+  
+  /* Link hover effects */
+  .underline-hover {
+    position: relative;
+  }
+  
+  .underline-hover::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: #64ffda;
+    transition: width 0.3s ease;
+  }
+  
+  .underline-hover:hover::after {
+    width: 100%;
+  }
+  
+  /* Button hover effects */
+  .hover-lift {
+    transition: transform 0.3s ease;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* Smooth transitions */
+  .smooth-transition {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Add to the end of your global.css file: */
+
+/* Fix for Framer Motion viewport detection with container padding */
+.viewport-fix {
+  transform: translateZ(0);
+  will-change: transform, opacity;
+}
+
+/* Ensure section animations work */
+section {
+  overflow: hidden;
+}
+
+/* Better viewport margins for animations */
+@media (min-width: 1024px) {
+  .viewport-margin {
+    margin: -100px;
+  }
+}
+
+/* Square image container */
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+/* Ensure images cover properly */
+.object-cover {
+  object-fit: cover;
+}
+
+/* Animation performance optimizations */
+.section-wrapper {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+/* Smooth transitions */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(10, 25, 47, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 40;
+  display: flex;
+  justify-content: flex-end; /* Links panel on right side */
+}
+
+
+/* Nav links centered */
+.mobile-nav-link {
+  display: block;
+  padding: 10px 0;
+  font-size: 1.25rem;
+  font-family: 'SF Mono', monospace;
+  color: #ccd6f6;
+  text-align: center; /* Center text inside links */
+  transition: all 0.3s ease;
+  width: 100%; /* Full width of container */
+}
+
+
+/* Close button positioning */
+.mobile-close-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #64ffda;
+  z-index: 45;
+}
+
+/* Navigation links styling */
+
+
+.mobile-nav-link:hover {
+  color: #64ffda;
+  padding-left: 10px;
+}
+
+.mobile-nav-number {
+  color: #64ffda;
+  text-align: center;
+  font-size: 0.85em;
+}
+
+/* Resume button styling */
+.mobile-resume-btn {
+  margin-top: 40px;
+  align-items: center;
+}
+}

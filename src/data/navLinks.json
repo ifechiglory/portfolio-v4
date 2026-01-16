@@ -1,0 +1,22 @@
+[
+  {
+    "name": "About",
+    "url": "#about",
+    "order": 1
+  },
+  {
+    "name": "Experience",
+    "url": "#experience",
+    "order": 2
+  },
+  {
+    "name": "Work",
+    "url": "#work",
+    "order": 3
+  },
+  {
+    "name": "Contact",
+    "url": "#contact",
+    "order": 4
+  }
+]
