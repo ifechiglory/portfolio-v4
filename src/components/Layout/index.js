@@ -17,6 +17,11 @@ const Layout = ({ children }) => {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap"
           rel="stylesheet"
         />
+        <title>Ifechukwu Edet - Portfolio</title>
+        <meta
+          name="description"
+          content="Frontend Developer specializing in React & Gatsby"
+        />
       </Helmet>
 
       <div className="min-h-screen pt-10 bg-navy text-light-slate">
