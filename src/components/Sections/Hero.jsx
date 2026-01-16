@@ -1,7 +1,6 @@
 import React from "react"
 import { motion } from "framer-motion"
-import { ChevronDown, ExternalLink } from "lucide-react"
-import { StaticImage } from "gatsby-plugin-image"
+import { ExternalLink } from "lucide-react"
 
 const Hero = () => {
   const greetings = ["Hi, my name is"]

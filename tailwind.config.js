@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Inter", "system-ui", "sans-serif"],
+        mono: ["JetBrains Mono", "SF Mono", "monospace"],
+      },
       colors: {
         navy: "#0a192f",
         "light-navy": "#112240",

@@ -1,99 +1,343 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+# 🚀 React Developer Portfolio
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+![Portfolio Preview](https://img.shields.io/badge/Portfolio-Live-green) ![React](https://img.shields.io/badge/React-18-blue) ![Gatsby](https://img.shields.io/badge/Gatsby-5-purple) ![Tailwind](https://img.shields.io/badge/Tailwind-3-blue)
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+A modern, high-performance portfolio website built with Gatsby and React, inspired by Brittany Chiang's v4 design. Features smooth animations, responsive design, and optimized performance.
 
-## 🚀 Quick start
+## ✨ Features
 
-1.  **Create a Gatsby site.**
+- ⚡ **Blazing Fast** - Built with Gatsby for optimal performance
 
-    Use the Gatsby CLI ([install instructions](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-0/#gatsby-cli)) to create a new site, specifying the default starter.
+- 🎨 **Modern Design** - Inspired by Brittany Chiang's portfolio
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+- 📱 **Fully Responsive** - Mobile-first approach with Tailwind CSS
 
-1.  **Start developing.**
+- 🎬 **Smooth Animations** - Framer Motion for delightful interactions
 
-    Navigate into your new site’s directory and start it up.
+- 🎯 **SEO Optimized** - Built-in Gatsby SEO features
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+- 🌙 **Dark Theme** - Navy/Green color scheme for developer-friendly UI
 
-1.  **Open the source code and start editing!**
+## 🛠️ Tech Stack
 
-    Your site is now running at `http://localhost:8000`!
+| Technology | Purpose |
 
-    Note: You'll also see a second link: `http://localhost:8000/___graphql`. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries).
+|------------|---------|
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+| **React 18** | UI Components |
 
-## 🚀 Quick start (Netlify)
+| **Gatsby 5** | Static Site Generation |
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+| **Tailwind CSS** | Styling & Utilities |
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+| **Framer Motion** | Animations & Transitions |
 
-## 🧐 What's inside?
+| **GraphQL** | Data Querying |
 
-A quick look at the top-level files and directories you'll see in a typical Gatsby project.
+| **Lucide React** | Icons |
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package.json
-    └── README.md
+## 📁 Project Structure
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+```
 
-1.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+portfolio/
 
-1.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+├── src/
 
-1.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+│   ├── components/
 
-1.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail).
+│   │   ├── Layout/
 
-1.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+│   │   │   ├── Header.jsx     # Navigation with mobile menu
 
-1.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+│   │   │   └── Footer.jsx
 
-1.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+│   │   └── Sections/
 
-1.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+│   │       ├── Hero.jsx       # Landing section
 
-1.  **`README.md`**: A text file containing useful reference information about your project.
+│   │       ├── About.jsx      # About me with profile image
 
-## 🎓 Learning Gatsby
+│   │       ├── Experience.jsx # Work history cards
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
+│   │       ├── Projects.jsx   # Project showcase
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/docs/tutorial/getting-started/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+│   │       └── Contact.jsx    # Contact form
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+│   ├── pages/
 
-## 💫 Deploy
+│   │   └── index.js          # Main page
 
-[Build, Deploy, and Host On Netlify](https://netlify.com)
+│   ├── data/
 
-The fastest way to combine your favorite tools and APIs to build the fastest sites, stores, and apps for the web. And also the best place to build, deploy, and host your Gatsby sites.
+│   │   ├── experience.json   # Work experience data
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+│   │   ├── projects.json     # Project data
+
+│   │   └── navLinks.json     # Navigation structure
+
+│   └── styles/
+
+│       └── global.css        # Tailwind directives & custom styles
+
+├── static/
+
+│   └── resume.pdf           # Static assets
+
+├── gatsby-config.js         # Gatsby configuration
+
+├── tailwind.config.js       # Tailwind theme
+
+└── package.json
+
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+
+- npm or yarn
+
+### Installation
+
+1\. **Clone the repository**
+
+```bash
+
+git clone https://github.com/yourusername/portfolio.git
+
+cd portfolio
+
+```
+
+2\. **Install dependencies**
+
+```bash
+
+npm install
+
+# or
+
+yarn install
+
+```
+
+3\. **Run development server**
+
+```bash
+
+npm run develop
+
+# or
+
+yarn develop
+
+```
+
+Open [http://localhost:8000](http://localhost:8000) to view your site.
+
+4\. **Build for production**
+
+```bash
+
+npm run build
+
+# or
+
+yarn build
+
+```
+
+## 🎨 Customization
+
+### 1. Personal Information
+
+Update these files with your details:
+
+- `src/data/experience.json` - Work experience
+
+- `src/data/projects.json` - Your projects
+
+- `src/data/navLinks.json` - Navigation items
+
+- `static/resume.pdf` - Your resume
+
+### 2. Styling
+
+Modify the color scheme in `tailwind.config.js`:
+
+```javascript
+
+module.exports = {
+
+  theme: {
+
+    extend: {
+
+      colors: {
+
+        navy: '#0a192f',
+
+        'light-navy': '#112240',
+
+        'lightest-navy': '#233554',
+
+        slate: '#8892b0',
+
+        'light-slate': '#a8b2d1',
+
+        'lightest-slate': '#ccd6f6',
+
+        green: '#64ffda',
+
+      }
+
+    }
+
+  }
+
+}
+
+```
+
+### 3. Profile Image
+
+Replace `src/images/me.jpeg` with your profile photo.
+
+## 📱 Key Components
+
+### Header Navigation
+
+- Fixed header with scroll effects
+
+- Mobile menu with full-screen overlay
+
+- Smooth scrolling to sections
+
+- Resume download button
+
+### Experience Section
+
+```jsx
+
+// Interactive cards with:
+
+- Expandable details
+
+- Technology tags
+
+- Current job badges
+
+- Statistics counter
+
+```
+
+### About Section
+
+```jsx
+
+// Profile with animated pulse effect
+
+- 4-ring concentric circles
+
+- Staggered animations
+
+- Technology grid with hover effects
+
+```
+
+## 🎯 Performance Optimizations
+
+- **Image Optimization**: Gatsby Image Plugin for responsive images
+
+- **Code Splitting**: Automatic route-based code splitting
+
+- **Prefetching**: Gatsby Link prefetches pages on hover
+
+- **Minification**: HTML, CSS, JS minification in production
+
+- **Lazy Loading**: Images and components load on viewport entry
+
+## 📝 Scripts
+
+| Command | Description |
+
+|---------|-------------|
+
+| `npm run develop` | Start development server |
+
+| `npm run build` | Build for production |
+
+| `npm run serve` | Serve production build |
+
+| `npm run clean` | Clear Gatsby cache |
+
+| `npm run lint` | Run ESLint |
+
+| `npm run format` | Format with Prettier |
+
+## 🚀 Deployment
+
+### Netlify (Recommended)
+
+1\. Push to GitHub
+
+2\. Connect repo to Netlify
+
+3\. Build command: `npm run build`
+
+4\. Publish directory: `public`
+
+### Vercel
+
+```bash
+
+npm i -g vercel
+
+vercel
+
+```
+
+### GitHub Pages
+
+```bash
+
+npm run build
+
+npm run deploy
+
+```
+
+## 🤝 Contributing
+
+1\. Fork the project
+
+2\. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+
+3\. Commit changes (`git commit -m 'Add AmazingFeature'`)
+
+4\. Push to branch (`git push origin feature/AmazingFeature`)
+
+5\. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Design inspiration from [Brittany Chiang](https://brittanychiang.com)
+
+- Icons from [Lucide React](https://lucide.dev)
+
+- Animation library [Framer Motion](https://www.framer.com/motion/)
+
+Project Link: [https://github.com/ifechiglory/portfolio-v4](https://github.com/ifechiglory/portfolio-v4)
+
+---
+
+⭐ **Star this repo if you found it helpful!** ⭐
+
+---
