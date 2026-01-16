@@ -1,18 +1,9 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
-
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
 module.exports = {
   siteMetadata: {
-    title: `Ifechukwu's Portfolio`,
-    description: `A frontend developer portfolio built with Gatsby and Tailwind CSS.`,
+    title: `Ifechukwu Edet - Frontend Developer`,
+    description: `Frontend Developer portfolio`,
     author: `@ifechiglory`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://v4portfolio.netlify.app/`,
   },
   plugins: [
     "gatsby-plugin-postcss",
