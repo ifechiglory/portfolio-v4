@@ -19,7 +19,7 @@
     "technologies": ["React", "Vite", "Tailwind CSS", "Firebase"],
     "github": "https://github.com/ifechiglory/quizard",
     "live": "https://frontend-quizard.netlify.app/",
-    "featured": true,
+    "featured": false,
     "image": "project-2.jpg",
     "category": "Education"
   },
@@ -116,5 +116,21 @@
     "featured": false,
     "image": "project-8.jpg",
     "category": "Education"
-  }
+  },
+  {
+  "id": "9",
+  "title": "SongBird",
+  "description": "A React-based lyrics management app for creating, editing, formatting, and searching song lyrics with ease.",
+  "longDescription": "A lightweight song lyrics management application built with React and Tailwind CSS. It features powerful search functionality, in-app editing, text formatting tools, and one-click copy-to-clipboard support. Songs are stored locally using localforage, ensuring persistent access across sessions. Designed with a clean, responsive UI for smooth content management and quick lyric handling.",
+  "technologies": [
+    "React",
+    "Tailwind CSS",
+    "localforage"
+  ],
+  "github": "https://github.com/ifechiglory/songbird",
+  "live": "https://songbird-manager.vercel.app/",
+  "featured": true,
+  "image": "project-9.jpg",
+  "category": "Productivity"
+}
 ]
