@@ -22,7 +22,17 @@
 }
 ,
 {
-    "id":"3",
+  "id":"3",
+  "company":"West Africa People's Institute",
+  "position":"Frontend Tutor",
+  "startDate":"2023-07-01",
+  "endDate":"2024-06-30",
+  "current":"false",
+  "description":"Delivered web development instruction focused on HTML, CSS, and JavaScript, helping students build responsive and interactive web pages. Developed practical learning exercises, supervised project-based assignments, and introduced students to core frontend development principles, including semantic HTML, styling, and basic JavaScript functionality.",
+  "technologies":["HTML","CSS","JavaScript"]
+}
+{
+    "id":"4",
     "company":"Daabo Technologies",
     "position":"Frontend Developer",
     "startDate":"2023-04-03",
