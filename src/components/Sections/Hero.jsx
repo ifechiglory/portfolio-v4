@@ -4,10 +4,10 @@ import { ExternalLink } from "lucide-react"
 
 const Hero = () => {
   const greetings = ["Hi, my name is"]
-  const name = "Ifechukwu Edet"
+  const name = "Ifechukwu Max-Oti"
   const title = "I build amazing stuff for the web."
   const description =
-    "I'm a frontend developer specializing in building (and occasionally teaching) exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products and mentoring young minds in frontend development."
+    "I'm a frontend developer specializing in building (and teaching) exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products and mentoring young minds in frontend development."
 
   return (
     <section
